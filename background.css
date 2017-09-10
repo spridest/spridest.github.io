@@ -3,4 +3,5 @@ body
 	background-image: url("https://b-ssl.duitang.com/uploads/item/201603/31/20160331115540_LnFXK.thumb.700_0.jpeg");
 	background-size:cover;
 	background-repeat:no-repeat;
+	background-attachment:fixed;
 	}
