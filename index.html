@@ -1,6 +1,6 @@
 <html>
     <head>
-	<title>高第一自造者社</title>
+	    <title>高第一自造者社</title>
         <link rel="stylesheet" type="text/css" href="background.css">
 	    <style type="text/css">
 		    .hdimg{
@@ -8,33 +8,64 @@
 			    background-repeat:no-repeat;
 			    background-position:center;
 		    }
-            .diveq{
+            .div1{
                 background-color:rgb(222, 222, 222);
                 background-size:cover;
                 width:55%;
                 height:auto;
-                float:left;
-                position:relative;
-                z-index:1
+                left:29%;
+                position:absolute;
+                z-index:1;
+            }
+            .div2{
+                background-color:rgb(222, 222, 222);
+                background-size:cover;
+                width:55%;
+                height:auto;
+                left:29%;
+                display:none;
+                position:absolute;
+                z-index:-1;
             }
             .padding{
                 padding:8px;
             }
             </style>
     </head>	
-    <body style="left: 73px; top: 17px">
+    <body>
 	    <div align="center" class="hdimg">
 		<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts"><img src="https://upload.cc/i/907AfJ.png" width=20% height="80px"></a>           	
         </div>
 
+        <script>
+            var button1 = document.getElementById("B1");
+            var div1 = document.getElementById("div1");
+            button1.addEventListener("click", function () {
+                if (div1.style.display == 'none') {
+                    div1.style.display = 'block';
+                } else {
+                    div1.style.display = 'none';
+                }
+            }, false);
+        </script>
+
         <div style="background-color:rgba(161, 161, 161 , 0.4);background-size:cover;width:16%;float:left;margin-left:13%">
-           <a href="https://spridest.github.io/"><img src="https://upload.cc/i/Kq9FV7.png" width="100%" class="padding"></a>
-           <a href="https://spridest.github.io/"><img src="https://upload.cc/i/y2G5ap.png" width="100%" class="padding"></a>
-           <a href="https://spridest.github.io/"><img src="https://upload.cc/i/WnBd3P.png" width="100%" class="padding"></a>
-           <a href="https://spridest.github.io/"><img src="https://upload.cc/i/LT3jfq.png" width="100%" class="padding"></a>
+           <button id="B1"><img src="https://upload.cc/i/Kq9FV7.png" width="100%" class="padding"></button>
+           <button id="B2"><img src="https://upload.cc/i/y2G5ap.png" width="100%" class="padding"></button>
+           <button id="B3"><img src="https://upload.cc/i/WnBd3P.png" width="100%" class="padding"></button>
+           <button id="B4"><img src="https://upload.cc/i/LT3jfq.png" width="100%" class="padding"></button>
         </div>
-        <div class="diveq">
-            <div>
+        <div>
+            <div class="div1" id="div1"  align="center">
+                <h4><b><p>Hello World!!</p>
+                <p>大家好!我們是國立高雄第一科技大學的自造者社</p>
+                <p>目前主要的研究領域有機械、電資及相關控制模組</p>
+                <p>也經常出沒於各大Maker Faire</p>
+                <p>歡迎大家來我的FB專業<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">高第一自造者社</a></p>
+                <p>也歡迎大家可以來多多交流</p>
+                <p><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t31.0-8/14435159_1676749665900208_3477735511160264725_o.jpg?oh=98ae6f2a207ef55550da161677a7e96b&oe=5A57E246" width="80%"></p></b>
+            </div>
+            <div class="div2">
                 <b><p>＜一＞CNC：</p>
                 <p>目前設備：Roland MDX-40A軟體SRP Player</p> 
                 <p>培訓內容：材料、刀具、製成、參數</p>
@@ -47,9 +78,8 @@
                 <b><p> ＜三＞Arduino：</p>
                 <p>目前設備：感測元件一組、板子多張、數款馬達種類</p> 
                 <p>培訓內容：元件的認知與應用、小專題製作</p>
-                <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" height="250px" ></p>
+                <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" height="250px"></p>
             </div>
         </div>
     </body>
-
 </html>
