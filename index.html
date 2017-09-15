@@ -1,85 +1,108 @@
 <html>
-    <head>
-	    <title>高第一自造者社</title>
-        <link rel="stylesheet" type="text/css" href="background.css">
-	    <style type="text/css">
-		    .hdimg{
-			    background-image:url("http://moi-portal.ru/upload/iblock/c2b/c2b97d2929ad57bdbce6bc092fc1a91b.jpg");
-			    background-repeat:no-repeat;
-			    background-position:center;
-		    }
-            .div1{
-                background-color:rgb(222, 222, 222);
-                background-size:cover;
-                width:55%;
-                height:auto;
-                left:29%;
-                position:absolute;
-                z-index:1;
-            }
-            .div2{
-                background-color:rgb(222, 222, 222);
-                background-size:cover;
-                width:55%;
-                height:auto;
-                left:29%;
-                display:none;
-                position:absolute;
-                z-index:-1;
-            }
-            .padding{
-                padding:8px;
-            }
-            </style>
-    </head>	
-    <body>
-	    <div align="center" class="hdimg">
-		<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts"><img src="https://upload.cc/i/907AfJ.png" width=20% height="80px"></a>           	
-        </div>
+<head>
+    <title>高第一自造者社</title>
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <style type="text/css">
+        .hdimg {
+            background-image: url("http://moi-portal.ru/upload/iblock/c2b/c2b97d2929ad57bdbce6bc092fc1a91b.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-        <script>
-            var button1 = document.getElementById("B1");
-            var div1 = document.getElementById("div1");
-            button1.addEventListener("click", function () {
-                if (div1.style.display == 'none') {
-                    div1.style.display = 'block';
-                } else {
-                    div1.style.display = 'none';
-                }
-            }, false);
-        </script>
+        .div1 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 55%;
+            height: auto;
+            left: 29%;
+            display: block;
+            position: absolute;
+        }
 
-        <div style="background-color:rgba(161, 161, 161 , 0.4);background-size:cover;width:16%;float:left;margin-left:13%">
-           <button id="B1"><img src="https://upload.cc/i/Kq9FV7.png" width="100%" class="padding"></button>
-           <button id="B2"><img src="https://upload.cc/i/y2G5ap.png" width="100%" class="padding"></button>
-           <button id="B3"><img src="https://upload.cc/i/WnBd3P.png" width="100%" class="padding"></button>
-           <button id="B4"><img src="https://upload.cc/i/LT3jfq.png" width="100%" class="padding"></button>
-        </div>
-        <div>
-            <div class="div1" id="div1"  align="center">
-                <h4><b><p>Hello World!!</p>
+        .div2 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 55%;
+            height: auto;
+            left: 29%;
+            display: none;
+            position: absolute;
+        }
+
+        .padding {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center" class="hdimg">
+        <a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">
+            <img src="https://upload.cc/i/907AfJ.png" width="20%" height="80px"></a>
+    </div>
+    <div style="background-color: rgba(161, 161, 161 , 0.4); background-size: cover; width: 16%; float: left; margin-left: 13%">
+        <button onclick="divFunc1()">
+            <img src="https://upload.cc/i/Kq9FV7.png" width="100%" class="padding"></button>
+        <button onclick="divFunc2()">
+            <img src="https://upload.cc/i/y2G5ap.png" width="100%" class="padding"></button>
+        <button onclick="divFunc3()">
+            <img src="https://upload.cc/i/WnBd3P.png" width="100%" class="padding"></button>
+        <button onclick="divFunc4()">
+            <img src="https://upload.cc/i/LT3jfq.png" width="100%" class="padding"></button>
+    </div>
+    <div>
+        <div class="div1" id="mydiv1" align="center">
+            <h4><b>
+                <p>Hello World!!</p>
                 <p>大家好!我們是國立高雄第一科技大學的自造者社</p>
                 <p>目前主要的研究領域有機械、電資及相關控制模組</p>
                 <p>也經常出沒於各大Maker Faire</p>
                 <p>歡迎大家來我的FB專業<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">高第一自造者社</a></p>
                 <p>也歡迎大家可以來多多交流</p>
-                <p><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t31.0-8/14435159_1676749665900208_3477735511160264725_o.jpg?oh=98ae6f2a207ef55550da161677a7e96b&oe=5A57E246" width="80%"></p></b>
-            </div>
-            <div class="div2">
-                <b><p>＜一＞CNC：</p>
-                <p>目前設備：Roland MDX-40A軟體SRP Player</p> 
-                <p>培訓內容：材料、刀具、製成、參數</p>
-                <p align="center"><img src="http://rebusrolandrepairs.com/yahoo_site_admin/assets/images/mdx-40_product_shot.111231103.jpg" height="250px" ></p>
-                <b><p>＜二＞3D列印：</p>
-                <p>目前設備：MakerBot Z18 搭配軟體 MakerBot Destop  Atom2.0 搭配軟體Kisslicer</p>
-                <p>培訓內容：機台種類、材料、列印件、支撐</p>
-                <p align="center"><img src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/m/a/makerbot-replicator-z18-3d-printer-usa-1.jpg" height="250px" >
-                <img src="http://www.hamen3d.com/files/products/Atom/8.jpg" height="250px"></p>
-                <b><p> ＜三＞Arduino：</p>
-                <p>目前設備：感測元件一組、板子多張、數款馬達種類</p> 
-                <p>培訓內容：元件的認知與應用、小專題製作</p>
-                <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" height="250px"></p>
-            </div>
+                <p><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t31.0-8/14435159_1676749665900208_3477735511160264725_o.jpg?oh=98ae6f2a207ef55550da161677a7e96b&oe=5A57E246" width="80%"></p>
+            </b>
         </div>
-    </body>
+        <div class="div2" id="mydiv4">
+            <b>
+            <p>＜一＞CNC：</p>
+            <p>目前設備：Roland MDX-40A軟體SRP Player</p>
+            <p>培訓內容：材料、刀具、製成、參數</p>
+            <p align="center">
+                <img src="http://rebusrolandrepairs.com/yahoo_site_admin/assets/images/mdx-40_product_shot.111231103.jpg" height="250px"></p>
+            <b>
+            <p>＜二＞3D列印：</p>
+            <p>目前設備：MakerBot Z18 搭配軟體 MakerBot Destop  Atom2.0 搭配軟體Kisslicer</p>
+            <p>培訓內容：機台種類、材料、列印件、支撐</p>
+            <p align="center">
+                <img src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/m/a/makerbot-replicator-z18-3d-printer-usa-1.jpg" height="250px">
+                <img src="http://www.hamen3d.com/files/products/Atom/8.jpg" height="250px">
+            </p>
+            <b>
+            <p>＜三＞Arduino：</p>
+            <p>目前設備：感測元件一組、板子多張、數款馬達種類</p>
+            <p>培訓內容：元件的認知與應用、小專題製作</p>
+            <p align="center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" height="250px"></p>
+        </div>
+    </div>
+    <script>
+        function divFunc1() {
+            if (document.getElementById("mydiv1").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'block';
+                document.getElementById("mydiv4").style.display = 'none';
+            }
+        }
+        function divFunc2() {
+            alert("敬請期待");
+        }
+        function divFunc3() {
+            alert("敬請期待");
+        }
+        function divFunc4() {
+            if (document.getElementById("mydiv4").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'none';
+                document.getElementById("mydiv4").style.display = 'block';
+            }
+        }
+    </script>
+</body>
 </html>
