@@ -54,7 +54,6 @@
     </style>
 </head>
 <body>
-    <title>高第一自造者社</title>
     <link href="background.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .hdimg {
@@ -108,6 +107,20 @@
     </style>
     <audio autoplay="autoplay" loop="loop" src="sound.mp3">
     </audio>
+    <div id="facepicture" style="position: absolute; background-color: rgba(222,222,222,0.7); background-size: cover; width: 100%; height: 100%; z-index: 100;">
+        <button style="width: 5%; background-color: rgba(0,0,0,0); float:right; display:block;"onclick="funcfacepicture()"><img src="https://upload.cc/i/uCOmkI.png" width="100%"></button>
+        <div  width="100%" align="center" style="margin-top:5%">
+            <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/18836592_1785531431688697_5703471353855390588_o.jpg?oh=fc5a4a2b59c7f874a6025f0c924773bb&oe=5A4D1E61" width="50%" align="center">
+        </div>
+    </div>
+    <script>
+        function funcfacepicture() {
+            if (document.getElementById("facepicture").style.display = 'clock') {
+                document.getElementById("facepicture").style.display = 'none';
+            }
+        }
+    </script>
+    <!--首頁活動-->
     <div align="center" class="hdimg">
         <a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">
             <img height="80px" src="https://upload.cc/i/907AfJ.png" width="20%" /></a>
@@ -126,9 +139,36 @@
             <img src="https://upload.cc/i/LT3jfq.png" width="100%" />
         </button>
     </div>
+    <script>
+        function divFunc1() {
+            if (document.getElementById("mydiv1").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'block';
+                document.getElementById("mydiv3").style.display = 'none';
+                document.getElementById("mydiv4").style.display = 'none';
+            }
+        }
+        function divFunc2() {
+            alert("敬請期待");
+        }
+        function divFunc3() {
+            if (document.getElementById("mydiv3").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'none';
+                document.getElementById("mydiv3").style.display = 'block';
+                document.getElementById("mydiv4").style.display = 'none';
+            }
+        }
+        function divFunc4() {
+            if (document.getElementById("mydiv4").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'none';
+                document.getElementById("mydiv3").style.display = 'none';
+                document.getElementById("mydiv4").style.display = 'block';
+            }
+        }
+    </script>
+    <!--左方選單-->
     <div>
         <div id="mydiv1" align="center" class="div1">
-            <h4><b></h4>
+            <b>
             <p>
                 Hello World!!
             </p>
@@ -152,6 +192,7 @@
             </p>
             </b>
         </div>
+        <!--社團介紹頁面-->
         <div id="mydiv3" class="div3">
             <table border="1" style="margin: 8px; width: 98%;">
                 <tr>
@@ -253,6 +294,7 @@
                 </tr>
             </table>
         </div>
+        <!--人員介紹頁面-->
         <div id="mydiv4" class="div4">
             <b>
             <p>
@@ -294,32 +336,6 @@
             </p>
         </div>
     </div>
-    <script>
-        function divFunc1() {
-            if (document.getElementById("mydiv1").style.display = 'none') {
-                document.getElementById("mydiv1").style.display = 'block';
-                document.getElementById("mydiv3").style.display = 'none';
-                document.getElementById("mydiv4").style.display = 'none';
-            }
-        }
-        function divFunc2() {
-            alert("敬請期待");
-        }
-        function divFunc3() {
-            if (document.getElementById("mydiv3").style.display = 'none') {
-                document.getElementById("mydiv1").style.display = 'none';
-                document.getElementById("mydiv3").style.display = 'block';
-                document.getElementById("mydiv4").style.display = 'none';
-            }
-        }
-        function divFunc4() {
-            if (document.getElementById("mydiv4").style.display = 'none') {
-                document.getElementById("mydiv1").style.display = 'none';
-                document.getElementById("mydiv3").style.display = 'none';
-                document.getElementById("mydiv4").style.display = 'block';
-            }
-        }
-    </script>
-    </b>
+    <!--人員培訓頁面-->
 </body>
 </html>
