@@ -12,83 +12,293 @@
         .div1 {
             background-color: rgb(222, 222, 222);
             background-size: cover;
-            width: 55%;
+            width: 53%;
             height: auto;
             left: 29%;
-            display: block;
-            position: absolute;
-        }
-
-        .div2 {
-            background-color: rgb(222, 222, 222);
-            background-size: cover;
-            width: 55%;
-            height: auto;
-            left: 29%;
+            margin-top: 8px;
             display: none;
             position: absolute;
         }
 
+        .div3 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 53%;
+            height: auto;
+            left: 29%;
+            margin-top: 8px;
+            display: block;
+            position: absolute;
+        }
+
+        .div4 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 53%;
+            height: auto;
+            left: 29%;
+            margin-top: 8px;
+            display: none;
+            position: absolute;
+        }
+
+        .picture {
+            height: 150px;
+            align-self: center;
+        }
+
         .padding {
-            padding: 8px;
+            margin-top: 8px;
+            width: 95%;
         }
     </style>
 </head>
 <body>
-    <audio src="sound.mp3" autoplay="autoplay" loop="loop"></audio>
+    <title>高第一自造者社</title>
+    <link href="background.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .hdimg {
+            background-image: url("http://moi-portal.ru/upload/iblock/c2b/c2b97d2929ad57bdbce6bc092fc1a91b.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .div1 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 53%;
+            height: auto;
+            left: 29%;
+            margin-top: 8px;
+            display: none;
+            position: absolute;
+        }
+
+        .div3 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 53%;
+            height: auto;
+            left: 29%;
+            margin-top: 8px;
+            display: block;
+            position: absolute;
+        }
+
+        .div4 {
+            background-color: rgb(222, 222, 222);
+            background-size: cover;
+            width: 53%;
+            height: auto;
+            left: 29%;
+            margin-top: 8px;
+            display: none;
+            position: absolute;
+        }
+
+        .picture {
+            height: 150px;
+            align-self: center;
+        }
+
+        .padding {
+            margin-top: 8px;
+            width: 95%;
+        }
+    </style>
+    <audio autoplay="autoplay" loop="loop" src="sound.mp3">
+    </audio>
     <div align="center" class="hdimg">
         <a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">
-            <img src="https://upload.cc/i/907AfJ.png" width="20%" height="80px"></a>
+            <img height="80px" src="https://upload.cc/i/907AfJ.png" width="20%" /></a>
     </div>
-    <div style="background-color: rgba(161, 161, 161 , 0.4); background-size: cover; width: 16%; float: left; margin-left: 13%">
-        <button onclick="divFunc1()">
-            <img src="https://upload.cc/i/Kq9FV7.png" width="100%" class="padding"></button>
-        <button onclick="divFunc2()">
-            <img src="https://upload.cc/i/y2G5ap.png" width="100%" class="padding"></button>
-        <button onclick="divFunc3()">
-            <img src="https://upload.cc/i/WnBd3P.png" width="100%" class="padding"></button>
-        <button onclick="divFunc4()">
-            <img src="https://upload.cc/i/LT3jfq.png" width="100%" class="padding"></button>
+    <div style="width: 16%; float: left; margin-left: 13%">
+        <button class="padding" onclick="divFunc1()">
+            <img src="https://upload.cc/i/Kq9FV7.png" width="100%" />
+        </button>
+        <button class="padding" onclick="divFunc2()">
+            <img src="https://upload.cc/i/y2G5ap.png" width="100%" />
+        </button>
+        <button class="padding" onclick="divFunc3()">
+            <img src="https://upload.cc/i/5BWgPq.png" width="100%" />
+        </button>
+        <button class="padding" onclick="divFunc4()">
+            <img src="https://upload.cc/i/LT3jfq.png" width="100%" />
+        </button>
     </div>
     <div>
-        <div class="div1" id="mydiv1" align="center">
-            <h4><b>
-                <p>Hello World!!</p>
-                <p>大家好!我們是國立高雄第一科技大學的自造者社</p>
-                <p>目前主要的研究領域有機械、電資及相關控制模組</p>
-                <p>也經常出沒於各大Maker Faire</p>
-                <p>歡迎大家來我的FB專業<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">高第一自造者社</a></p>
-                <p>也歡迎大家可以來多多交流</p>
-                <p><img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t31.0-8/14435159_1676749665900208_3477735511160264725_o.jpg?oh=98ae6f2a207ef55550da161677a7e96b&oe=5A57E246" width="80%"></p>
+        <div id="mydiv1" align="center" class="div1">
+            <h4><b></h4>
+            <p>
+                Hello World!!
+            </p>
+            <p>
+                大家好!我們是國立高雄第一科技大學的自造者社
+            </p>
+            <p>
+                目前主要的研究領域有機械、電資及相關控制模組
+            </p>
+            <p>
+                也經常出沒於各大Maker Faire
+            </p>
+            <p>
+                歡迎大家來我的FB專業<a href="https://www.facebook.com/MAKEFirstTech/?fref=ts">高第一自造者社</a>
+            </p>
+            <p>
+                也歡迎大家可以來多多交流
+            </p>
+            <p>
+                <img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t31.0-8/14435159_1676749665900208_3477735511160264725_o.jpg?oh=98ae6f2a207ef55550da161677a7e96b&amp;oe=5A57E246" width="80%" />
+            </p>
             </b>
         </div>
-        <div class="div2" id="mydiv4">
+        <div id="mydiv3" class="div3">
+            <table border="1" style="margin: 8px; width: 98%;">
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/15622703_1512908525391497_7268221533377199033_n.jpg?oh=6928f0835c80915d2b4e43736e7a11d4&amp;oe=5A5786E8" /></th>
+                    <th><font size="2px">
+                            機械系與自動化工程系 郭有迪
+                        <p>
+                            職位：退休的社團創始人</p>
+                        <p>
+                            名言：不用太努力 只要多注意，在江湖上混的人，遇事不要慌，要先讓子彈飛一會。</p>
+                        <p>
+                            是要實作出一個可以解決問題的方案，而不是產出一個呈現完美技術的藝術品。</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/c0.0.959.959/13892030_1143297962432153_1327940697364418316_n.jpg?oh=0d43dd55570c5c1ce232ad42fe172569&amp;oe=5A5B9485" /></th>
+                    <th><font size="2px">
+                        
+                            電子工程系 陳威丞
+                        <p>
+                            職位：退休活動長</p>
+                        <p>
+                            興趣：天南地北聊天，喜歡有趣事物</p>
+                        <p>
+                            擅長：嵌入式Arduino、3D列印機、簡易3D繪圖</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/14292384_1031366983629343_2572804369351475931_n.jpg?oh=2e45177bc765e0736fe8a87720d91508&oe=5A5BA302" /></th>
+                    <th><font size="2px">
+                        
+                            機械與自動化工程系 王柏翔
+                        <p>
+                            職位：退休總務長</p>
+                        <p>
+                            興趣：能聊就聊就是聊天</p>
+                        <p>
+                            擅長：3D列印機、簡易3D繪圖</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/14462897_973672049429108_7382551799484334687_n.jpg?oh=9d965fc06de63f586a18ca9663657481&oe=5A524934" /></th>
+                    <th><font size="2px">
+                        
+                            機械與自動化工程系 周秉翰
+                        <p>
+                            職位：現任社長</p>
+                        <p>
+                            興趣：不公開</p>
+                        <p>
+                            擅長：不公開</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/15747568_1200914496691899_5174832889061523778_n.jpg?oh=e37df26ea6a523bf9ff06fdc0db623b0&oe=5A150AD6" /></th>
+                    <th><font size="2px">
+                        
+                            機械與自動化工程系 喬遠程
+                        <p>
+                            職位：現任副社長</p>
+                        <p>
+                            興趣：最愛玩遊戲，做有趣的事情</p>
+                        <p>
+                            擅長：3D列印機、簡易3D繪圖、一點點的程式語言</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18814049_227980304360699_1032133094646421539_n.jpg?oh=c46e6c6b032f256b7bb17f1f8c2159f0&oe=5A5E9F29" /></th>
+                    <th><font size="2px">
+                        
+                            電子工程系 王皓瑋
+                        <p>
+                            職位：現任活動長</p>
+                        <p>
+                            興趣：不公開</p>
+                        <p>
+                            擅長：所有事物</p>
+                        </font></th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img class="picture" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/12801318_678960782245881_2562828808090266106_n.jpg?oh=95c4947b182ce93d406e9b61506f5ae7&oe=5A490AF1" /></th>
+                    <th><font size="2px">
+                        
+                            電腦與通訊工程系 吳柏諺(大雞雞)
+                        <p>
+                            職位：現任資訊長</p>
+                        <p>
+                            興趣：寫程式</p>
+                        <p>
+                            擅長：寫程式</p>
+                        </font></th>
+                </tr>
+            </table>
+        </div>
+        <div id="mydiv4" class="div4">
             <b>
-            <p>＜一＞CNC：</p>
-            <p>目前設備：Roland MDX-40A軟體SRP Player</p>
-            <p>培訓內容：材料、刀具、製成、參數</p>
-            <p align="center">
-                <img src="http://rebusrolandrepairs.com/yahoo_site_admin/assets/images/mdx-40_product_shot.111231103.jpg" height="250px"></p>
-            <b>
-            <p>＜二＞3D列印：</p>
-            <p>目前設備：MakerBot Z18 搭配軟體 MakerBot Destop  Atom2.0 搭配軟體Kisslicer</p>
-            <p>培訓內容：機台種類、材料、列印件、支撐</p>
-            <p align="center">
-                <img src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/m/a/makerbot-replicator-z18-3d-printer-usa-1.jpg" height="250px">
-                <img src="http://www.hamen3d.com/files/products/Atom/8.jpg" height="250px">
+            <p>
+                ＜一＞CNC：
             </p>
-            <b>
-            <p>＜三＞Arduino：</p>
-            <p>目前設備：感測元件一組、板子多張、數款馬達種類</p>
-            <p>培訓內容：元件的認知與應用、小專題製作</p>
+            <p>
+                目前設備：Roland MDX-40A軟體SRP Player
+            </p>
+            <p>
+                培訓內容：材料、刀具、製成、參數
+            </p>
             <p align="center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" height="250px"></p>
+                <img height="250px" src="http://rebusrolandrepairs.com/yahoo_site_admin/assets/images/mdx-40_product_shot.111231103.jpg" />
+            </p>
+            <p>
+                ＜二＞3D列印：
+            </p>
+            <p>
+                目前設備：MakerBot Z18 搭配軟體 MakerBot Destop Atom2.0 搭配軟體Kisslicer
+            </p>
+            <p>
+                培訓內容：機台種類、材料、列印件、支撐
+            </p>
+            <p align="center">
+                <img height="250px" src="http://www.robotshop.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/m/a/makerbot-replicator-z18-3d-printer-usa-1.jpg" />
+                <img height="250px" src="http://www.hamen3d.com/files/products/Atom/8.jpg" />
+            </p>
+            <p>
+                ＜三＞Arduino：
+            </p>
+            <p>
+                目前設備：感測元件一組、板子多張、數款馬達種類
+            </p>
+            <p>
+                培訓內容：元件的認知與應用、小專題製作
+            </p>
+            <p align="center">
+                <img height="250px" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" />
+            </p>
         </div>
     </div>
     <script>
         function divFunc1() {
             if (document.getElementById("mydiv1").style.display = 'none') {
                 document.getElementById("mydiv1").style.display = 'block';
+                document.getElementById("mydiv3").style.display = 'none';
                 document.getElementById("mydiv4").style.display = 'none';
             }
         }
@@ -96,14 +306,20 @@
             alert("敬請期待");
         }
         function divFunc3() {
-            alert("敬請期待");
+            if (document.getElementById("mydiv3").style.display = 'none') {
+                document.getElementById("mydiv1").style.display = 'none';
+                document.getElementById("mydiv3").style.display = 'block';
+                document.getElementById("mydiv4").style.display = 'none';
+            }
         }
         function divFunc4() {
             if (document.getElementById("mydiv4").style.display = 'none') {
                 document.getElementById("mydiv1").style.display = 'none';
+                document.getElementById("mydiv3").style.display = 'none';
                 document.getElementById("mydiv4").style.display = 'block';
             }
         }
     </script>
+    </b>
 </body>
 </html>
